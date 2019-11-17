@@ -1,28 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <img alt="backG" class="backgroundI" src="./assets/dibg.png" />
+
+    <b-container class="bv-example-row">
+      <b-row class="text-center" id="name-title">
+        <b-col></b-col>
+        <b-col cols="8"><h1>Diablo Immortal</h1></b-col>
+        <b-col></b-col>
+      </b-row>
+      <b-row class="text-center">
+        <b-col></b-col>
+        <b-col><Video /></b-col>
+        <b-col></b-col>
+      </b-row>
+      <b-row class="text-center">
+        <b-col></b-col>
+        <b-col cols="8"> <Button /></b-col>
+        <b-col></b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header.vue";
+import Video from "./components/Video.vue";
+import Button from "./components/Button.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Header,
+    Video,
+    Button
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.backgroundI {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+h1 {
+  color: lightyellow;
+  padding-top: 50px;
 }
 </style>
