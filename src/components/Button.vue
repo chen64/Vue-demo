@@ -1,18 +1,27 @@
 <template>
-  <div>
-    <b-button class="buttonA" size="lg" disabled>Coming Soon</b-button>
+  <div id="buttons">
+    <b-button class="buttonA" size="lg" disabled>{{ tbd }}</b-button>
     <b-button
       class="buttonB"
       size="lg"
       variant="dark"
       href="https://diabloimmortal.com/en-us/"
-      >Learn More</b-button
+      >{{ learn }}</b-button
     >
   </div>
 </template>
 
-<script></script>
-
+<script>
+export default {
+  name: "Button",
+  data() {
+    return {
+      tbd: "Coming Soon",
+      learn: "Learn More"
+    };
+  }
+};
+</script>
 <style scoped>
 .buttonA {
   margin-left: 40px;

@@ -15,8 +15,8 @@
   <div>
     <b-jumbotron id="jumbo">
       <iframe
-        width="560"
-        height="320"
+        width="600"
+        height="350"
         src="https://www.youtube.com/embed/RtSmAwpVHsA"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -40,6 +40,7 @@ export default {};
 #jumbo {
   position: relative;
   background: none;
+  height: 400px;
 }
 
 #buttonO {

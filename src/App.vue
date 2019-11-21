@@ -5,19 +5,18 @@
 
     <b-container class="bv-example-row">
       <b-row class="text-center" id="name-title">
-        <b-col></b-col>
-        <b-col cols="8"><h1>Diablo Immortal</h1></b-col>
-        <b-col></b-col>
+        <b-col><Title /></b-col>
       </b-row>
       <b-row class="text-center">
-        <b-col></b-col>
         <b-col><Video /></b-col>
-        <b-col></b-col>
       </b-row>
       <b-row class="text-center">
         <b-col></b-col>
         <b-col cols="8"> <Button /></b-col>
         <b-col></b-col>
+      </b-row>
+      <b-row class="text-center">
+        <b-col><Email /></b-col>
       </b-row>
     </b-container>
   </div>
@@ -27,13 +26,24 @@
 import Header from "./components/Header.vue";
 import Video from "./components/Video.vue";
 import Button from "./components/Button.vue";
+import Title from "./components/Title.vue";
+import Email from "./components/Email.vue";
 
 export default {
   name: "app",
   components: {
     Header,
     Video,
-    Button
+    Button,
+    Title,
+    Email
+  },
+  data() {
+    return {
+      message: {
+        info: "I wish to recieve info and news."
+      }
+    };
   }
 };
 </script>
@@ -43,9 +53,5 @@ export default {
   height: 100%;
   width: 100%;
   position: absolute;
-}
-h1 {
-  color: lightyellow;
-  padding-top: 50px;
 }
 </style>
