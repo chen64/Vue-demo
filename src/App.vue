@@ -7,8 +7,9 @@
       <b-row class="text-center" id="name-title">
         <b-col><Title /></b-col>
       </b-row>
-      <b-row class="text-center">
+      <b-row class="text-center" id="mainV">
         <b-col><Video /></b-col>
+        <b-col><External /></b-col>
       </b-row>
       <b-row class="text-center">
         <b-col></b-col>
@@ -28,6 +29,7 @@ import Video from "./components/Video.vue";
 import Button from "./components/Button.vue";
 import Title from "./components/Title.vue";
 import Email from "./components/Email.vue";
+import External from "./components/External.vue";
 
 export default {
   name: "app",
@@ -36,7 +38,8 @@ export default {
     Video,
     Button,
     Title,
-    Email
+    Email,
+    External
   },
   data() {
     return {
@@ -53,5 +56,8 @@ export default {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+#mainV {
+  height: 400px;
 }
 </style>

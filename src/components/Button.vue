@@ -26,9 +26,11 @@ export default {
 .buttonA {
   margin-left: 40px;
   margin-right: 50px;
+  margin-top: 30px;
 }
 .buttonB {
   margin-left: 40px;
   margin-right: 50px;
+  margin-top: 30px;
 }
 </style>
